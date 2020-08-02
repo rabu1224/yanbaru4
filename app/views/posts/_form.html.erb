@@ -1,12 +1,13 @@
-<!-- 略 -->
+<%= form_with model: @post, local: true do |form| %>
   <div>
-  <!-- ***** 次を修正(, "タイトル" を消去) ***** -->
-    <%= form.label :title %>
+    <%= form.label :title, "タイトル" %>
     <%= form.text_field :title %>
   </div>
   <div>
-  <!-- ***** 次を修正 ***** -->
-    <%= form.label :content %>
+    <%= form.label :content, "内容" %>
     <%= form.text_field :content %>
   </div>
-<!-- 略 -->
+  <div>
+    <%= form.submit "送信" %>
+  </div>
+<% end %>
