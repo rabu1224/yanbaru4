@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+
+ div.field_with_errors {
+   display: contents;
+
+ // ***** 以下を追加 *****
+   input {
+     border: 2px solid red;
+   }
+ // ***** 以上を追加 *****
+ }
