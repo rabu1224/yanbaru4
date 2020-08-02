@@ -34,3 +34,7 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# 以下を追加
+.DS_Store
+/vendor/bundle
