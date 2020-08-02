@@ -10,6 +10,10 @@
   </head>
 
   <body>
+    <!-- ***** 以下を追加 ***** -->
+    <%= link_to "投稿一覧", posts_path %> <%= link_to "新規投稿", new_post_path %>
+    <hr>
+    <!-- ***** 以上を追加 ***** -->
     <%= yield %>
   </body>
 </html>
